@@ -17,7 +17,7 @@ $(".slider-header-btn.prev").on("click",function(){
 	$(".slider-item").eq(count).addClass('slide--active');
 });
 //slick slider для туров
-$(".hotels-services-slider").slick({
+$(".hotels-services-slider, .tours-slider").slick({
 	infinite: true,
   	slidesToShow: 3,
   	slidesToScroll: 1,
@@ -42,30 +42,6 @@ $(".hotels-services-slider").slick({
   ]
 });
 
-$(".tours-slider").slick({
-  infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    responsive: [
-    {
-      breakpoint: 1198,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        infinite: true,
-        arrows: false
-      }
-    },
-    {
-      breakpoint: 767,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false
-      }
-    }
-  ]
-});
 //Открытие закрытие моб меню
 $(".moby-btn").on("click", function(e){
 	e.preventDefault();
@@ -131,3 +107,15 @@ $(".resrve-btn").on("click", function(){
     + $("#children").val() + " дітей";
     $(".input-people").attr("value", countPeople);
 });
+$(window).on("scroll", function(){
+  var scroll =  $(window).scrollTop();
+  if(scroll > 400){
+    $(".up-btn").fadeIn(200);
+  }else{
+    $(".up-btn").fadeOut(200);
+  }
+});
+$(".up-btn").on("click", function(e){
+  e.preventDefault();
+  $("html, body").animate({scrollTop:0},300);
+})

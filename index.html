@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
 				</a>
 				<span class="logo-txt">Мережа готелів</span>
 			</div>
-			<button class="moby-btn">
+			<button class="moby-btn" aria-label="mobile-menu-button">
 				<span class="moby-btn-decor"></span>
 			</button>
 			<ul class="main-menu-list">
@@ -83,13 +83,13 @@
 						</div>
 						<a href="" class="slider-link">Дізнайся більше</a>
 					</div>
-				<button type="button" class="slider-header-btn prev"></button>
-				<button type="button" class="slider-header-btn next"></button>
+				<button type="button" class="slider-header-btn prev" tabindex="0" aria-label="prev-slide"></button>
+				<button type="button" class="slider-header-btn next" tabindex="0" aria-label="next-slid"></button>
 				</div>
 			</div>
 		</div>
 		<div class="header-form-wrapper">
-			<form class="header-form container" action="index.html" method="POST">
+			<form class="header-form container" action="index.php" method="POST">
 				<p class="slogan">Шукайте пропозиції</p>
 				<input type="search" name="resting-place" placeholder="Куди ви хочете поїхати ?" class="input-place">
 				<input type="text" name="date-week" value="" class="input-date" placeholder="Куди заїзд вшд'їзд">
@@ -316,8 +316,9 @@
 			</div>
 		</section>
 		<section class="video">
+			<h2 class="visually-hidden">сопровождающее видео</h2>
 			<div class="video-wrapper container">
-				<iframe width="" height="600" src="https://www.youtube.com/embed/YoDh_gHDvkk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe"></iframe>
+				<iframe height="600" src="https://www.youtube.com/embed/YoDh_gHDvkk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe"></iframe>
 			</div>
 		</section>
 		<section class="why-we">
@@ -604,7 +605,7 @@
 
 		<div class="footer-form-wrapper container">
 			<h4 class="h4 footer-form-title">Підписка</h4>
-			<form action="index.html" method="POST" class="footer-form">
+			<form action="index.php" method="POST" class="footer-form">
 				<input type="text" name="user-name" placeholder="Ваше ім'я" class="subscription-input-name" required>
 				<input type="email" name="user-email" placeholder="Ваш Email" class="subscription-input-mail" required>
 				<button type="submit" class="footer-form-btn">Підписатися</button>
@@ -617,6 +618,7 @@
 			</div>
 		</div>
 	</footer>
+	<button class="up-btn" aria-label="Close"></button>
 	<script src="script/jquery-3.3.1.min.js"></script>
 	<script src="slick/slick.min.js"></script>
 	<script src="daterangepicker-master/moment.min.js"></script>
