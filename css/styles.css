@@ -1142,6 +1142,7 @@ a{
 	cursor: pointer;
 	display: none;
 	outline: none;
+	z-index: 100;
 }
 .up-btn:hover,
 .up-btn:active{
