@@ -109,7 +109,7 @@ $(".resrve-btn").on("click", function(){
 });
 $(window).on("scroll", function(){
   var scroll =  $(window).scrollTop();
-  if(scroll > 400){
+  if(scroll > 800){
     $(".up-btn").fadeIn(200);
   }else{
     $(".up-btn").fadeOut(200);
