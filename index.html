@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="daterangepicker-master/daterangepicker.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<h1 class="visually-hidden">Отдых в Украине</h1>
+	<header class="header">
+		<div class="header-top-wrapper container">
+			<form class="select-form">
+			  <select required>
+			    <option value="" hidden>Вибір мови</option>
+			    <option>Русский</option>
+			    <option>Українська</option>
+			     <option>English</option>
+			  </select>
+			</form>
+			<div class="logo-wrapper">
+				<a href="#" class="header-logo"><img src="imgs/logo.png" alt="логотип" height="75" width="75">
+				</a>
+				<span class="logo-txt">Мережа готелів</span>
+			</div>
+			<button class="moby-btn">
+				<span class="moby-btn-decor"></span>
+			</button>
+			<ul class="main-menu-list">
+				<li class="menu-list-item">
+					<a href="" class="menu-link">тури</a>
+				</li>
+				<li class="menu-list-item">
+					<a href="" class="menu-link">проживання</a>
+				</li>
+				<li class="menu-list-item">
+					<a href="" class="menu-link">послуги</a>
+				</li>
+				<li class="menu-list-item">
+					<a href="" class="menu-link">відгуки</a>
+				</li>
+				<li class="menu-list-item">
+					<a href="" class="menu-link">контакти</a>
+				</li>
+			</ul>
+			<ul class="header-tel-numbers">
+				<li class="tel-numbers-item">
+					<a href="tel:0800505365">0 800 505 365</a><span> (безкоштовно)</span>
+				</li>
+				<li class="tel-numbers-item">
+					<a href="tel:0800505365">080 050-53-65</a>
+				</li>
+				<li class="tel-numbers-item">
+					<a href="tel:0800505365">067 524-05-24</a>
+				</li>
+			</ul>
+		</div>
+		<div class="header-info-wrapper">
+			<div class="header-info container">
+				<div class="header-slider">
+					<div class="slider-item slide--active">
+						<div class="slider-item-txt-wrapper">
+							<p class="slider-small-txt">відкривай</p>
+							<p class="slider-big-txt">Україну 365</p>
+						</div>
+						<a href="" class="slider-link">Дізнайся більше</a>
+					</div>
+					<div class="slider-item">
+						<div class="slider-item-txt-wrapper">
+							<p class="slider-small-txt">відкривай</p>
+							<p class="slider-big-txt">Україну 364</p>
+						</div>
+						<a href="" class="slider-link">Дізнайся більше</a>
+					</div>
+					<div class="slider-item">
+						<div class="slider-item-txt-wrapper">
+							<p class="slider-small-txt">відкривай</p>
+							<p class="slider-big-txt">Україну 363</p>
+						</div>
+						<a href="" class="slider-link">Дізнайся більше</a>
+					</div>
+				<button type="button" class="slider-header-btn prev"></button>
+				<button type="button" class="slider-header-btn next"></button>
+				</div>
+			</div>
+		</div>
+		<div class="header-form-wrapper">
+			<form class="header-form container" action="index.html" method="POST">
+				<p class="slogan">Шукайте пропозиції</p>
+				<input type="search" name="resting-place" placeholder="Куди ви хочете поїхати ?" class="input-place">
+				<input type="text" name="date-week" value="" class="input-date" placeholder="Куди заїзд вшд'їзд">
+				<div class="input-people-wrapper">
+					<input type="text" name="peoples" value="" placeholder="3 номера 2 дорослих 0 дітей" class="input-people">
+					<fieldset class="rooms-reserve">
+						<div class="field-wrapper">
+							<label for="rooms">Номерів</label>
+							<span class="resrve-btn rooms-minus" tabindex="0">-</span>
+							<input type="text" name="rooms" value="0" id="rooms">
+							<span class="resrve-btn rooms-plus" tabindex="0">+</span>
+						</div>
+						<div class="field-wrapper">
+							<label for="mens">Дорослих</label>
+							<span class="resrve-btn mens-minus" tabindex="0">-</span>
+							<input type="text" name="rooms" value="0" id="mens">
+							<span class="resrve-btn mens-plus" tabindex="0">+</span>
+						</div>
+						<div class="field-wrapper">
+							<label for="children">Дітей</label>
+							<span class="resrve-btn children-minus" tabindex="0">-</span>
+							<input type="text" name="rooms" value="0" id="children">
+							<span class="resrve-btn children-plus" tabindex="0">+</span>
+						</div>
+					</fieldset>
+				</div>
+				<button type="submit" class="header-form-btn">знайти</button>
+			</form>
+		</div>
+	</header>
+	<main>
+		<section class="weekly-tours">
+			<div class="weekly-tours-wrapper container">
+				<h2 class="h2 weekly-tours-title">Тижневі тури &laquo;Все включено&raquo;</h2>
+				<div class="tours-slider carousel-slider">
+
+					<div class="carousel-slider-item">
+						<img src="imgs/tour-1-img.jpg" height="200" width="370" class="carousel-slider-item-img" alt="пейзаж">
+						<span class="price"> від 1800 грн</span>
+						<div class="carousel-item-dscr">
+							<h3 class="h3 carousel-item-title">Тижневий тур &laquo;Карпати - Ворохта цілий рік&raquo;</h3>
+							<p>8 варіантів відпочинку на вибір щодня,
+							Говерла, Рафтинг, Почаївська лавра, 
+							+ з листопада по квітень - &laquo;Лижний тур 
+							на Буковель&raquo;.</p>
+							<div class="housing">
+							<span class="housing-type">Готель</span>
+							<ul class="housing-stars-list">
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+							</ul>
+							</div>
+							<div class="rating">
+								<span class="rating-number">9.0</span>
+								<span class="rating-word">Чудово</span>
+								<span class="count-reviews">12 відгуків</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slider-item">
+						<img src="imgs/tour-2-img.jpg" height="200" width="370" class="carousel-slider-item-img" alt="пейзаж">
+						<span class="price"> від 2700 грн</span>
+						<div class="carousel-item-dscr">
+							<h3 class="h3 carousel-item-title">Тижневий тур Трускавець 365 - Карпати - Львів - Закарпаття</h3>
+							<p>Активно-оздоровчо-екскурсійний 
+							тижневий тур ...</p>
+							<div class="housing">
+							<span class="housing-type">Готель</span>
+							<ul class="housing-stars-list">
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+							</ul>
+							</div>
+							<div class="rating">
+								<span class="rating-number">9.0</span>
+								<span class="rating-word">Чудово</span>
+								<span class="count-reviews">12 відгуків</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slider-item">
+						<img src="imgs/tour-3-img.jpg" height="200" width="370" class="carousel-slider-item-img" alt="пейзаж">
+						<span class="price"> від 2000 грн</span>
+						<div class="carousel-item-dscr">
+							<h3 class="h3 carousel-item-title">Тижневий тур 
+							«ЧЕРКАЩИНА 365»</h3>
+							<p>Шевченківський національний заповідник 
+							у Каневі, край Богдана Хмельницького - Чигиринщина, Холодний Яр.</p>
+							<div class="housing">
+							<span class="housing-type">Готель</span>
+							<ul class="housing-stars-list">
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+							</ul>
+							</div>
+							<div class="rating">
+								<span class="rating-number">9.0</span>
+								<span class="rating-word">Чудово</span>
+								<span class="count-reviews">12 відгуків</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slider-item">
+						<img src="imgs/tour-1-img.jpg" height="200" width="370" class="carousel-slider-item-img" alt="пейзаж">
+						<span class="price"> від 1800 грн</span>
+						<div class="carousel-item-dscr">
+							<h3 class="h3 carousel-item-title">Тижневий тур &laquo;Карпати - Ворохта цілий рік&raquo;</h3>
+							<p>8 варіантів відпочинку на вибір щодня,
+							Говерла, Рафтинг, Почаївська лавра, 
+							+ з листопада по квітень - &laquo;Лижний тур 
+							на Буковель&raquo;.</p>
+							<div class="housing">
+							<span class="housing-type">Готель</span>
+							<ul class="housing-stars-list">
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+							</ul>
+							</div>
+							<div class="rating">
+								<span class="rating-number">9.0</span>
+								<span class="rating-word">Чудово</span>
+								<span class="count-reviews">12 відгуків</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slider-item">
+						<img src="imgs/tour-1-img.jpg" height="200" width="370" class="carousel-slider-item-img" alt="пейзаж">
+						<span class="price"> від 1800 грн</span>
+						<div class="carousel-item-dscr">
+							<h3 class="h3 carousel-item-title">Тижневий тур &laquo;Карпати - Ворохта цілий рік&raquo;</h3>
+							<p>8 варіантів відпочинку на вибір щодня,
+							Говерла, Рафтинг, Почаївська лавра, 
+							+ з листопада по квітень - &laquo;Лижний тур 
+							на Буковель&raquo;.</p>
+							<div class="housing">
+							<span class="housing-type">Готель</span>
+							<ul class="housing-stars-list">
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+							</ul>
+							</div>
+							<div class="rating">
+								<span class="rating-number">9.0</span>
+								<span class="rating-word">Чудово</span>
+								<span class="count-reviews">12 відгуків</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slider-item">
+						<img src="imgs/tour-1-img.jpg" height="200" width="370" class="carousel-slider-item-img" alt="пейзаж">
+						<span class="price"> від 1800 грн</span>
+						<div class="carousel-item-dscr">
+							<h3 class="h3 carousel-item-title">Тижневий тур &laquo;Карпати - Ворохта цілий рік&raquo;</h3>
+							<p>8 варіантів відпочинку на вибір щодня,
+							Говерла, Рафтинг, Почаївська лавра, 
+							+ з листопада по квітень - &laquo;Лижний тур 
+							на Буковель&raquo;.</p>
+							<div class="housing">
+							<span class="housing-type">Готель</span>
+							<ul class="housing-stars-list">
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+							</ul>
+							</div>
+							<div class="rating">
+								<span class="rating-number">9.0</span>
+								<span class="rating-word">Чудово</span>
+								<span class="count-reviews">12 відгуків</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="tour-included">
+			<div class="tour-included-wrapper container">
+				<h2 class="h2 tour-included-title">У вартість туру включено</h2>
+				<ul class="tour-included-list">
+					<li class="tour-included-list-item">
+						<p>
+						Проживання 7 днів у готелі мережі 
+						«Відпочинок 365»
+						</p>
+					</li>
+					<li class="tour-included-list-item">
+						<p>
+						Трансфер з вокзалів
+						</p>
+					</li>
+					<li class="tour-included-list-item">
+						<p>
+						Харчування
+						</p>
+					</li>
+					<li class="tour-included-list-item">
+						<p>
+						Щоденні автобусні єкскурсії
+						</p>
+					</li>
+					<li class="tour-included-list-item">
+						<p>
+						Щоденні незабутні походи та подрожі
+						</p>
+					</li>
+					<li class="tour-included-list-item">
+						<p>
+						Вечірні розважальні шоу программи
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="video">
+			<div class="video-wrapper container">
+				<iframe width="" height="600" src="https://www.youtube.com/embed/YoDh_gHDvkk" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe"></iframe>
+			</div>
+		</section>
+		<section class="why-we">
+			<div class="why-we-wrapper container">
+				<h2 class="h2 why-we-title">Чому нас обирають ?</h2>
+				<ul class="why-we-list">
+					<li class="why-we-list-item">
+						Сім‘я готелів «Відпочинок 365» складається з гостинних та затишних готелів - «Ворохта 365» 3-зірковий , «Трускавець 365» 4-зірковий , «Київ 365» 4-зірковий , «Черкащина 365» 3-зірковий.
+					</li>
+					<li class="why-we-list-item">
+						Вже більше 10 років наша мережа займається організацією комфортного та пізнавального відпочинку.
+					</li>
+					<li class="why-we-list-item">
+						В наших Тижневих Турах «Все Включено» ми надаємо 
+						не тільки якісні готельні послуги, але й знайомимо гостей 
+						з Карпатами, Закарпаттям, Львівщиною та Черкащиною
+						у всій їх красі та різноманітті.
+					</li>
+					<li class="why-we-list-item">
+						Гарантуємо якість та Повернемо Гроші за послуги, 
+						які не сподобалися! Запрошуємо в Гості!
+					</li>
+					<li class="why-we-list-item">
+						Сьогодні Мережа Готелів «Відпочинок 365» є лідером організації відпочинку в Україні за ціною - якістю - доступністю.
+					</li>
+					<li class="why-we-list-item">Ми поєднуємо 		комфортний відпочинок, подорожі 
+						та оздоровлення, що не залежать від погоди та пори року. Всі готелі об'єднані спільними якостями - гостинність, бажанням догодити та зробити приємне гостю.
+					</li>
+					<li class="why-we-list-item">
+						Ми робимо комфортним та доступним для усіх гірськолижний відпочинок та маємо власний курорт «Крутогір 365»
+					</li>
+					<li class="why-we-list-item">
+						Ми багато подорожуємо та переймаємо кращі практики 
+						на свої готелі та Тижневі Тури «Все Включено». Саме тому ми отримуємо велику кількість позитивних відгуків, рекомендацій та повторних приїздів від наших гостей.
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="hotel-services">
+			<div class="hotel-services-wrapper container">
+				<h2 class="h2 hotel-services-title">Готельні послуги</h2>
+				<div class="hotels-services-slider carousel-slider">
+
+					<div class="carousel-slider-item">
+						<img src="imgs/hotel-1-img.jpg" height="200" width="370" class="carousel-slider-item-img" alt="готель">
+						<span class="price"> від 2400 грн</span>
+						<div class="carousel-item-dscr">
+							<h3 class="h3 carousel-item-title">Туристичний комлекс &laquo;Трускавець&raquo; </h3>
+							<p>м. Трускавець</p>
+							<div class="housing">
+							<span class="housing-type">Готель</span>
+							<ul class="housing-stars-list">
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+							</ul>
+							</div>
+							<div class="rating">
+								<span class="rating-number">9.0</span>
+								<span class="rating-word">Чудово</span>
+								<span class="count-reviews">12 відгуків</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slider-item">
+						<img src="imgs/hotel-2-img.jpg" height="200" width="370" class="carousel-slider-item-img" alt="готель">
+						<span class="price"> від 1000 грн</span>
+						<div class="carousel-item-dscr">
+							<h3 class="h3 carousel-item-title">Готель &laquo;Ворохта&raquo;</h3>
+							<p>м. Ворохта</p>
+							<div class="housing">
+							<span class="housing-type">Готель</span>
+							<ul class="housing-stars-list">
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+							</ul>
+							</div>
+							<div class="rating">
+								<span class="rating-number">9.0</span>
+								<span class="rating-word">Чудово</span>
+								<span class="count-reviews">12 відгуків</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slider-item">
+						<img src="imgs/hotels-3-img.jpg" height="200" width="370" class="carousel-slider-item-img" alt="готель">
+						<span class="price"> від 3300 грн</span>
+						<div class="carousel-item-dscr">
+							<h3 class="h3 carousel-item-title">Готель &laquo;Київ&raquo;</h3>
+							<p>м. Київ</p>
+							<div class="housing">
+							<span class="housing-type">Готель</span>
+							<ul class="housing-stars-list">
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+							</ul>
+							</div>
+							<div class="rating">
+								<span class="rating-number">9.0</span>
+								<span class="rating-word">Чудово</span>
+								<span class="count-reviews">12 відгуків</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slider-item">
+						<img src="imgs/hotels-3-img.jpg" height="200" width="370" class="carousel-slider-item-img" alt="готель">
+						<span class="price"> від 3300 грн</span>
+						<div class="carousel-item-dscr">
+							<h3 class="h3 carousel-item-title">Готель &laquo;Київ&raquo;</h3>
+							<p>м. Київ</p>
+							<div class="housing">
+							<span class="housing-type">Готель</span>
+							<ul class="housing-stars-list">
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+							</ul>
+							</div>
+							<div class="rating">
+								<span class="rating-number">9.0</span>
+								<span class="rating-word">Чудово</span>
+								<span class="count-reviews">12 відгуків</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="carousel-slider-item">
+						<img src="imgs/hotels-3-img.jpg" height="200" width="370" class="carousel-slider-item-img" alt="готель">
+						<span class="price"> від 3300 грн</span>
+						<div class="carousel-item-dscr">
+							<h3 class="h3 carousel-item-title">Готель &laquo;Київ&raquo;</h3>
+							<p>м. Київ</p>
+							<div class="housing">
+							<span class="housing-type">Готель</span>
+							<ul class="housing-stars-list">
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+								<li class="stars-list-item"></li>
+							</ul>
+							</div>
+							<div class="rating">
+								<span class="rating-number">9.0</span>
+								<span class="rating-word">Чудово</span>
+								<span class="count-reviews">12 відгуків</span>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer-top-wrapper container">
+			<div class="site-map">
+				<h4 class="h4 footer-map-title">Карта сайта</h4>
+				<ul class="site-map-list">
+					<li class="site-map-list-item">
+						<a href="#" class="site-map-list-link">Тури</a>
+					</li>
+					<li class="site-map-list-item">
+						<a href="#" class="site-map-list-link">Проживання</a>
+					</li>
+					<li class="site-map-list-item">
+						<a href="#" class="site-map-list-link">Послуги</a>
+					</li>
+					<li class="site-map-list-item">
+						<a href="#" class="site-map-list-link">Відгуки</a>
+					</li>
+					<li class="site-map-list-item">
+						<a href="#" class="site-map-list-link">Партнерам</a>
+					</li>
+					<li class="site-map-list-item">
+						<a href="#" class="site-map-list-link">Часто задаванні питання</a>
+					</li>
+					<li class="site-map-list-item">
+						<a href="#" class="site-map-list-link">Блог</a>
+					</li>
+					<li class="site-map-list-item">
+						<a href="#" class="site-map-list-link">Контакти</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-contacts">
+				<h4 class="h4 footer-contacts-title">Контакти</h4>
+				<ul class="footer-tel-numbers">
+					<li class="footer-tel-numbers-item">
+						<a href="tel:0800505365">0 800 505 365(безкоштовно)</a>
+					</li>
+					<li class="footer-tel-numbers-item">
+						<a href="tel:0800505365">080 050-53-65</a>
+					</li>
+					<li class="footer-tel-numbers-item">
+						<a href="tel:0800505365">067 524-05-24</a>
+					</li>
+				</ul>
+				<a href="#" class="footer-mail-link">tur365@gmail.com</a>
+			</div>
+
+			<div class="footer-fb">
+				<h5 class="h5 footer-fb-title">Ми на Facebook</h5>
+				<ul class="footer-fb-list">
+					<li class="footer-fb-list-item">
+						<a href="" class="footer-fb-link">
+							Черкаси 365
+						</a>
+					</li>
+					<li class="footer-fb-list-item">
+						<a href="" class="footer-fb-link">
+							Черкаси 365
+						</a>
+					</li>
+					<li class="footer-fb-list-item">
+						<a href="" class="footer-fb-link">
+							Черкаси 365
+						</a>
+					</li>
+					<li class="footer-fb-list-item">
+						<a href="" class="footer-fb-link">
+							Черкаси 365
+						</a>
+					</li>
+					<li class="footer-fb-list-item">
+						<a href="" class="footer-fb-link">
+							Черкаси 365
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-inst">
+				<h5 class="h5 footer-inst-title">Ми в Instagram</h5>
+				<ul class="footer-inst-list">
+					<li class="footer-inst-list-item">
+						<a href="" class="footer-inst-list-link">
+							Трускавець 365
+						</a>
+					</li>
+					<li class="footer-inst-list-item">
+						<a href="" class="footer-inst-list-link">
+							Трускавець 365
+						</a>
+					</li>
+					<li class="footer-inst-list-item">
+						<a href="" class="footer-inst-list-link">
+							Трускавець 365
+						</a>
+					</li>
+					<li class="footer-inst-list-item">
+						<a href="" class="footer-inst-list-link">
+							Трускавець 365
+						</a>
+					</li>
+					<li class="footer-inst-list-item">
+						<a href="" class="footer-inst-list-link">
+							Трускавець 365
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="footer-youtube">
+				<h5 class="h5 footer-youtube-title">Ми на Youtube</h5>
+				<ul class="footer-youtube-list">
+					<li class="footer-youtube-list-item">
+						<a href="" class="footer-youtube-list-link">
+							Київ 365
+						</a>
+					</li>
+					<li class="footer-youtube-list-item">
+						<a href="" class="footer-youtube-list-link">
+							Ялта 365
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="footer-form-wrapper container">
+			<h4 class="h4 footer-form-title">Підписка</h4>
+			<form action="index.html" method="POST" class="footer-form">
+				<input type="text" name="user-name" placeholder="Ваше ім'я" class="subscription-input-name" required>
+				<input type="email" name="user-email" placeholder="Ваш Email" class="subscription-input-mail" required>
+				<button type="submit" class="footer-form-btn">Підписатися</button>
+			</form>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="footer-bootom-wrapper container">
+				<p>&copy; 2014-2019 ВІДОЧИНОК 365. Всі права захищені.</p>
+			</div>
+		</div>
+	</footer>
+	<script src="script/jquery-3.3.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+	<script src="daterangepicker-master/moment.min.js"></script>
+	<script src="daterangepicker-master/daterangepicker.js"></script>
+	<script src="script/js.js"></script>
+</body>
+</html>
